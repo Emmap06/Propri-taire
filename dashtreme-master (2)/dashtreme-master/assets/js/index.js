@@ -8,17 +8,17 @@ $(function() {
 			var myChart = new Chart(ctx, {
 				type: 'line',
 				data: {
-					labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct"],
+					labels: ["Jan", "Fev", "Mar", "Avr", "Mai", "Juin", "Juil", "Août", "Sept", "Oct", "Nov", "Déc"],
 					datasets: [{
-						label: 'New Visitor',
-						data: [3, 3, 8, 5, 7, 4, 6, 4, 6, 3],
+						label: 'Loyer normal',
+						data: [3, 3, 8, 5, 7, 4, 6, 4, 6, 3, 2, 1],
 						backgroundColor: '#fff',
 						borderColor: "transparent",
 						pointRadius :"0",
 						borderWidth: 3
 					}, {
-						label: 'Old Visitor',
-						data: [7, 5, 14, 7, 12, 6, 10, 6, 11, 5],
+						label: 'Avances',
+						data: [7, 5, 14, 7, 12, 6, 10, 6, 11, 5, 10, 6],
 						backgroundColor: "rgba(255, 255, 255, 0.25)",
 						borderColor: "transparent",
 						pointRadius :"0",
@@ -70,7 +70,7 @@ $(function() {
 			var myChart = new Chart(ctx, {
 				type: 'doughnut',
 				data: {
-					labels: ["Direct", "Affiliate", "E-mail", "Other"],
+					labels: ["MTN money", "Wave", "Orange money", "Moov money", "Carte de Crédit"],
 					datasets: [{
 						backgroundColor: [
 							"#ffffff",
@@ -78,8 +78,8 @@ $(function() {
 							"rgba(255, 255, 255, 0.50)",
 							"rgba(255, 255, 255, 0.20)"
 						],
-						data: [5856, 2602, 1802, 1105],
-						borderWidth: [0, 0, 0, 0]
+						data: [5856, 2602, 1802, 1105, 2015],
+						borderWidth: [0, 0, 0, 0, 0]
 					}]
 				},
 			options: {

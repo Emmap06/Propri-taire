@@ -494,6 +494,7 @@ hr {
   transition: background .3s;
 }
 
+/*C'est qu'on peut changer le fond de l'app*/
 body.bg-theme1 {
   background-image: url(../images/bg-themes/1.png);
 }
@@ -1876,7 +1877,7 @@ table.grid td {
 	color:#fff;
 }
 .table th {
-    font-weight: 600;
+    font-weight: 800;
 }
 .table-responsive{
 	white-space:nowrap;
