@@ -147,11 +147,9 @@
         <div class="col-lg-6">
           <div class="card">
             <div class="card-body">
-              <h5 class="">Vous n'avez pas de propriétés <br>veuillez en ajouter</h5>
-              
-              <button type="button" class="btn btn-success" data-toggle="modal" data-target="#popup-form">Ajouter une propriété</button>
-
-			        <!-- <div class="table-responsive">
+              <h5 class="card-title">Tableau des propriétés</h5>
+              <button type="button" class="btn btn-success">Ajouter une propriété</button>
+			        <div class="table-responsive">
                <table class="table">
                   <thead>
                     <tr>
@@ -163,6 +161,8 @@
                       <th scope="col">Avances</th>
                       <th scope="col">Contrats</th>
                       <th scope="col">Type de la maison</th>
+                      <th>Mise à Jour</th>
+					            <th>Supprimer</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -175,6 +175,8 @@
                       <td>@mdo</td>
                       <td>@mdo</td>
                       <td>@mdo</td>
+                      <td><a class="btn btn-sm btn-success" href="#" >Modifier</a></td>
+					            <td><a class="btn btn-sm btn-danger" href="#" >Supprimer</a></td>
                     </tr>
                     <tr>
                       <th scope="row">2</th>
@@ -185,6 +187,8 @@
                       <td>@fat</td>
                       <td>@fat</td>
                       <td>@fat</td>
+                      <td><a class="btn btn-sm btn-success" href="#" >Modifier</a></td>
+					            <td><a class="btn btn-sm btn-danger" href="#" >Supprimer</a></td>
                     </tr>
                     <tr>
                       <th scope="row">3</th>
@@ -195,10 +199,12 @@
                       <td>@twitter</td>
                       <td>@twitter</td>
                       <td>@twitter</td>
+                      <td><a class="btn btn-sm btn-success" href="#" >Modifier</a></td>
+					            <td><a class="btn btn-sm btn-danger" href="#" >Supprimer</a></td>
                     </tr>
                   </tbody>
                 </table>
-              </div> -->
+              </div>
             </div>
           </div>
         </div>
@@ -257,84 +263,6 @@
   <!--end color switcher-->
    
   </div><!--End wrapper-->
-
-
-
-<!-- Le pop-up du formulaire -->
-<div class="modal fade" id="popup-form" tabindex="-1" role="dialog" aria-labelledby="popup-form-label" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content bg-primary"> <!-- Couleur de fond bleu sombre -->
-
-      <!-- Header du pop-up -->
-      <div class="modal-header">
-        <h5 class="modal-title text-white" id="popup-form-label">Ajouter une propriété</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true" class="text-white">&times;</span>
-        </button>
-      </div>
-
-      <!-- Corps du pop-up -->
-      <div class="modal-body">
-        <!-- Formulaire -->
-        <form id="property-form" action="tableau.html" >
-          <!-- Champs du formulaire -->
-          <div class="form-group">
-            <label for="adresse" class="text-white">Adresse :</label>
-            <input type="text" id="adresse" name="adresse" class="form-control" required>
-          </div>
-          
-          <div class="form-group">
-            <label for="loyer">Loyer :</label>
-            <input type="text" id="loyer" name="loyer" class="form-control" required>
-          </div>
-
-          <div class="form-group">
-            <label for="pieces">Nombre de pièces :</label>
-            <input type="text" id="pieces" name="pieces" class="form-control" required>
-          </div>
-
-          <div class="form-group">
-            <label for="cautions">Cautions :</label>
-            <input type="text" id="cautions" name="cautions" class="form-control" required>
-          </div>
-
-          <div class="form-group">
-            <label for="avances">Avances :</label>
-            <input type="text" id="avances" name="avances" class="form-control" required>
-          </div>
-
-          <div class="form-group">
-            <label for="contrats">Contrats :</label>
-            <input type="text" id="contrats" name="contrats" class="form-control" required>
-          </div>
-
-          <div class="form-group">
-            <label for="type_maison">Type de la maison :</label>
-            <select id="type_maison" name="type_maison" class="form-control" required>
-              <option value="appartement">Appartement</option>
-              <option value="maison">Maison</option>
-              <option value="studio">Studio</option>
-            </select>
-          </div>
-
-          <!-- Bouton de soumission -->
-          <button type="submit" class="btn btn-light" >Ajouter Propriété</button>
-        </form>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-
-<script>
-  // Code JavaScript pour afficher le pop-up
-  $(document).ready(function(){
-    $(".btn-success").click(function(){
-      $("#popup-form").modal();
-    });
-  });
-</script>
 
 
   <!-- Bootstrap core JavaScript-->
