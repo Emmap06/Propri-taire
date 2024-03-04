@@ -3,8 +3,8 @@ CREATE DATABASE Bd_proprietaire;
 USE Bd_proprietaire;
 
 
-CREATE TABLE User (
-    UserID INT PRIMARY KEY IDENTITY,
+CREATE TABLE Users (
+    UsersID INT PRIMARY KEY IDENTITY,
     Email NVARCHAR(100) NOT NULL UNIQUE,
     Username NVARCHAR(50) NOT NULL UNIQUE,
     MotDePasse NVARCHAR(100) NOT NULL,
@@ -20,7 +20,7 @@ CREATE TABLE Proprietaire (
     Pays NVARCHAR(50),
     Photo_path NVARCHAR(100),
     UserID INT,
-    FOREIGN KEY (UserID) REFERENCES User(UserID)
+    FOREIGN KEY (UsersID) REFERENCES Users(UsersID)
 );
 
 CREATE TABLE Locataire (
@@ -32,7 +32,7 @@ CREATE TABLE Locataire (
     Pays NVARCHAR(50),
     Photo_path NVARCHAR(100),
     UserID INT,
-    FOREIGN KEY (UserID) REFERENCES User(UserID)
+    FOREIGN KEY (UsersID) REFERENCES Users(UsersID)
 );
 
 CREATE TABLE Propriete (
